@@ -5,9 +5,9 @@ sound_array = [];
 light_array = [];
 $(document).ready(function () {
     const dweetName = 'luke-captains-iot-dweet';
-    //mainChart(dweetName);
-    //soundChart(dweetName);
-    //lightChart(dweetName);
+    mainChart(dweetName);
+    soundChart(dweetName);
+    lightChart(dweetName);
     getLocalStorage();
 });
 

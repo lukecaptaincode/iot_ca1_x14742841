@@ -29,13 +29,14 @@ class Sensors:
             print(grovepi.digitalRead(self.switch))
 
     def blink(self):
-        digitalWrite(led,1)
+        grovepi.digitalWrite(self.led,1)
         time.sleep(1)
-        digitalWrite(led,0)
-    def buzz(Self):
-        digitalWrite(buzzer,1)
+        grovepi.digitalWrite(self.led,0)
+
+    def buzz(self):
+        grovepi.digitalWrite(self.buzzer,1)
         time.sleep(1)
-        digitalWrite(buzzer, 0)
+        grovepi.digitalWrite(self.buzzer, 0)
 
     def get_light(self):
         if self.is_test:
